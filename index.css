@@ -73,3 +73,7 @@ text.label {
 text.source {
   font-size: 24px;
 }
+img {
+  width: auto;
+  height: auto;
+}
