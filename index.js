@@ -152,7 +152,7 @@
       .attr('y', margin / 2.4)
       .attr('transform', 'rotate(-90)')
       .attr('text-anchor', 'middle')
-      .text('Price of Avocados')
+      .text('Suicide Rates')
 
     svg.append('text')
       .attr('class', 'label')
@@ -166,7 +166,7 @@
       .attr('x', width / 2 + margin)
       .attr('y', 40)
       .attr('text-anchor', 'middle')
-      .text('Avocado Prices')
+      .text('Suicide Rates by Country')
 
     
   
