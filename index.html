@@ -1,9 +1,172 @@
+ <!DOCTYPE html>
 <html>
+<title>CSC 196V Final Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+<style>
+font-family: 'Frank Ruhl Libre', serif;
+.mySlides {display:none}
+</style>
+ <body bgcolor="black">
+<body>
 
-<frameset cols="10%, "89%">
-  <frame src="banner.jpg" scrolling="no" noresize="noresize">
-  <frame src="middle.html" >
+<div class="mySlides">
 
-</frameset>
+  <h3 align = middle><b>Suicide Data in the US:</b></h3>
+  <h4 align = middle><b>Exploring a Grim Truth<br><br></b></h4>
+  <h2 align = middle><b>Authors:</b><br>Amir, Shayan Tom<br>Lee, Alex<br>Singh, Komalvir </h2>
+</div>
+
+
+<div class ="mySlides">
+
+  <h3 align = center><b><br>Introduction</b></h3>
+  <h2 align = center><b>Suicide remains one of the largest public health concerns in the US. 
+  Claiming 40,000 lives every year, suicide ranks as 10th leading cause of death.<br></h2>
+  <h2 align = center><b>The CDC has tracked suicide rates for generations, but what does the data really tell us? Is this issue growing? Is it preventable?<br><br></h2>
+  <h2 align = center><b><br>Let's take a look at deaths by suicide across the US.<br><br><br><br><br></h2>
   
+</div>
+
+<div class="w3-content" style="max-width:940px">
+ <div class="mySlides" style=background-color:black align = middle style="width:100%">
+		
+  <h2 align = middle><b>Overview of Suicide Deaths by State (2017)</b></h2>
+  
+		<link rel="stylesheet" href="USmapStyle.css">
+        <p id="demo"></p>
+<div id="tooltip"></div><!-- div to hold tooltip. -->
+<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
+<script src="uStates.js"></script> <!-- creates uStates. -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="USmapScript.js">
+</script>
+</div>
+
+
+<div class ="mySlides">
+	<h2 align = center><b><br><br<br><br><br><br><br><br><br><br>Looking at numbers alone doesn't give us the whole picture.
+	In order to get a better idea, let's examine other leading causes of death in the US. Specifically, those aged 25-34.<br><br><br><br><br><br><br><br><br></h2>
+ 
+</div>
+
+
+<div class ="mySlides " style=background-color:white  style="width:20%">
+<script type="text/javascript" src="pieScript.js"></script>
+</head>
+<body>
+
+<center><h1 class="title">Leading Causes of Death in the US in 2017 (Age 25-34)</h1></center>
+	<center><p class="subtitle">Uncheck Causes to Compare</p></center>
+    <div style="margin:70px;"  id="chart"></div>
+</body>
+<script style="rw">
+    var inputData = [{label:"Unintentional Injury",value:25669},
+	{label:"Suicide",value:7948},
+	{label:"Homicide",value:5488},
+	{label:"Heart Disease",value:3681},
+	{label:"Malignant Neoplasms",value:3616}];
+
+    var colorScheme = ["#E57373","#BA68C8","#7986CB","#A1887F","#90A4AE","#AED581","#9575CD","#FF8A65","#4DB6AC","#FFF176","#64B5F6","#00E676"];
+    renderPieChart(inputData,"#chart",colorScheme);
+</script>
+</html>
+	<link rel="stylesheet" href="pieStyle.css">
+</div>
+
+
+
+<div class ="mySlides">
+	<h3 align = center><b><br>How is this data broken down between genders?<br><br></h3>
+  <h2 align = center><b></h2>
+</div>
+
+<div class ="mySlides">
+	<h2 align = middle><b>An area graph reveals a significant disparity between males and females. In 2017, 66,472 male suicide deaths 
+	were reported while 6,963 female suicide deaths were reported. Why is there a tenfold increase from females to males? </b></h2>
+	<img src="maleVSfemale.jpg" alt="Paris" class="center">
+</div>
+
+<div class ="mySlides">
+	<center><h2 align = center><b><br><br<br><br><br><br><br><br><br><br>Perhaps the answer lies in the method by which the death occurs. 
+	Examining data from the CDC provides some insight into the 
+	preference of violent methods in males.<br><br><br><br><br><br><br><br><br></h2>
+ 
+</div>
+
+<div class ="mySlides">
+<h2 align = middle><b> </b></h2>
+	<center><img src="method.jpg" alt="Methods of Death" class="center"><center/>
+</div>
+
+<div class ="mySlides">
+
+	<h2 align = middle><b>A thorough look at age groups, genders, and several decades
+	reveals a worrisome trend in the past 30 years among a certain age group in particular- 35-54.<br></h2>
+	<center><img src="age.jpg" alt="Methods of Death" class="center"><center/>
+	
+</div>
+
+
+
+<div class ="mySlides">
+	<center><h2 align = center><b><br><br<br><br><br><br><br><br><br><br>While the issue of suicide casts a great shadow over our country, 
+	it is one often dealt with in solitude. It is important that this data is evaluated in order to search for solutions in which healthcare 
+	and outreach can be improved for those suffering from depression. If you are seeking help for yourself or a loved one and are not sure where to start, 
+	the National Institute of Mental Health offers some <a href="https://www.nimh.nih.gov/health/find-help/index.shtml">resources</a>. <br><br><br><br> National Suicide Prevention Lifeline 1-800-273-8255<br><br><br><br></h2>
+ 
+</div>
+
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-black" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-black" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+  <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+  <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+  <button class="w3-button demo" onclick="currentDiv(7)">7</button>
+  <button class="w3-button demo" onclick="currentDiv(8)">8</button>
+  <button class="w3-button demo" onclick="currentDiv(9)">9</button>
+  <button class="w3-button demo" onclick="currentDiv(10)">10</button>
+  <button class="w3-button demo" onclick="currentDiv(11)">11</button> 
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-gray", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-gray";
+}
+</script>
+
+</body>
 </html>
